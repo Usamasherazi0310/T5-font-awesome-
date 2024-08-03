@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>font awesome</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style type="text/css">
+    *{
+      padding: 0px;
+      margin: 0px;
+    }
+    body{
+      overflow: hidden;
+    }
+    .nav{
+      margin-left: 15%;
+      font-size: 20px;
+      padding-top: 20px;
+    }
+    .nav ul li{
+      display: inline-block;
+      margin-left: 5%;
+      text-transform:capitalize;
+      padding-top: 10px;
+    }
+    .nav ul li:focus{
+      border: 2px solid blue;
+      
+    }
+    i{
+      margin-left: 2%;
+    }
+    i:hover{
+      color: #516acf;
+    }
+    a{
+      text-decoration: none;
+      color: #616D8A;
+    }
+    a:hover{
+      color: #516acf;
+    }
+    #logo{
+      color: #516acf;
+    }
+    #logo:hover{
+      color: #ffbe33;
+    }
+    
+    #show{
+      padding-left: 14%;
+      font-size: 30px;
+    }
+    
+    .writing{
+      margin-top: 3%;
+      margin-left: 16%;
+      width: 66%;
+      height: 12vh;
+      background-color: #f36944;
+      border-radius: 15px;
+    }
+    .writing #logo{
+      font-size: 40px;
+      margin-top: 20px;
+      color: #394161;
+    }
+    .writing p{
+      color: white;
+      margin-left: 7%;
+      position: relative;
+      bottom: 20px;
+      font-size: 18px;
+      
+    }
+    .writing span{
+      font-size: 20px;
+      font-weight: bolder;
+    }
+    .writing h3{
+      float: right;
+      width: 17%;
+      height: 5vh;
+      margin-right: 2%;
+      padding-top: 8px;
+      border: 2px solid black;
+      border-bottom: 5px solid black;
+      background-color: white;
+      position: relative;
+      bottom: 60%;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .writing h3:hover{
+      background-color: #cacfe6;
+      transition: 0.9s ease;
+    }
+    .writing #clock{
+      margin-right: 7%;
+      margin-top: 2%;
+    }
+    .full{
+      width: 100%;
+      height: 70vh;
+/*      background-color: red;*/
+      margin-top: 10px;
+    }
+    .text{
+      width: 50%;
+      height: 70vh;
+      background-color: white;
+      margin-left: 25%;
+    }
+    .text h1{
+      text-align: center;
+      padding-top: 10%;
+      font-size: 50px;
+      color: #394161;
+      font-weight: bolder;
+    }
+    .text span{
+      color: #ffbe33;
+    }
+    .text p{
+      text-align: center;
+      margin-top: 5%;
+      font-size: 20px;
+      color: #394161;
+    }
+    .text p b{
+      color: #111f5c;
+      font-weight: bolder;
+    }
+    .text h3{
+      width: 25%;
+      height: 5vh;
+      padding-top: 2%;
+      text-align: center;
+      margin-left: 15%;
+      border: 2px solid #111f5c;
+      border-bottom: 5px solid #111f5c;
+      margin-top: 10%;
+      border-radius: 10px;
+      color: #111f5c;
+      cursor: pointer;
+    }
+    .text h3 i{
+      margin-right: 5%;
+      color: #111f5c;
+
+    }
+    .text h3:hover{
+      background-color: #cacfe6;
+      transition: 0.9s ease;
+    }
+    .text h4{
+      width: 25%;
+      height: 5vh;
+      padding-top: 2%;
+      text-align: center;
+      margin-left: 50%;
+      border: 2px solid #111f5c;
+      border-bottom: 5px solid #111f5c;
+      margin-top: 10%;
+      border-radius: 10px;
+      color: #111f5c;
+      background-color: #e6c927;
+      position: relative;
+      bottom: 26%;
+      font-size: 17px;
+      cursor: pointer;
+    }
+    .text h4 i{
+      margin-right: 5%;
+      color: #111f5c;
+/*      font-size: 20px;*/
+    }
+    .text h4:hover{
+      background-color: #fad607;
+      transition: 0.9s ease;
+    }
+    .full .first{
+      position: relative;
+      bottom: 100%;
+      overflow: hidden;
+    }
+    .full .second{
+      position: relative;
+      bottom: 100%;
+      float: right;
+      overflow: hidden;
+
+    }
+/*    ...............................................................SLIDE KI CSS.....................................................*/
+     .wrapper{
+      display: inline-flex;
+    }
+    .wrapper .static-txt{
+      color: #111f5c;
+      font-size: 60px;
+      font-weight: 400;
+      margin-left: 200px;
+    }
+     .wrapper .dynamic-txts{
+       margin-left: 15px;
+       height: 90px;
+       line-height: 90px;
+       overflow: hidden;
+    }
+     .dynamic-txts li{
+       color: #FC6D6D;
+       list-style: none;
+       font-size: 50px;
+       font-weight: 500;
+       position: relative;
+       top: 0;
+       animation: slide 6s steps(4) infinite;
+    }
+    @keyframes slide{
+      100%{
+       top: -360px;
+      }
+    }
+    .dynamic-txts li span{
+      position: relative;
+      bottom: 15px;
+    }
+     .dynamic-txts li span::after{
+       content: "";
+       position: absolute;
+       left: 0;
+       height: 140%;
+       width: 100%;
+       background-color: white;
+       border-left: 2px solid white;
+       animation: typing 1.5s steps(10) infinite;
+    }
+    @keyframes typing{
+      100%{
+       left: 100%;
+       margin: 0 -35px 0 35px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="containt">
+    <div class="nav">
+      <ul>
+        <i class="fa-brands fa-font-awesome" id="logo"></i>
+        <li><a href="#">start</a></li>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <li><a href="#">icons</a></li>
+        <li><a href="#">Docs</a></li>
+        <li><a href="#">plan</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Podcast</a></li>
+        <i class="fa-solid fa-arrow-right-to-bracket" id="show"></i>
+      </ul>
+    </div>
+    <div class="writing">
+      <i class="fa-solid fa-chess-queen" id="logo"></i>
+      <p><span>Say hello to Web Awesome,</span> the biggest and best library of open-source web components.</p>
+      <h3><a href="#"><i class="fa-solid fa-clock" id="clock"></i>pre-order today</a></h3>
+    </div>
+    <div class="full">
+      <div class="text">
+        <h1>Take the hassle out of icons in your</h1>
+        <div class="wrapper">
+           <div class="static-txt">in your</div>
+              <ul class="dynamic-txts">
+                <li><span>website</span></li>
+                <li><span>Native App</span></li>
+                <li><span>designer</span></li>
+                <li><span>Project</span></li>
+            </ul>
+        </div>  
+        <p><b> Font Awesome</b> is the Internet's icon library and toolkit, used by <br>millions of designers, developers, and content creators.</p>
+        <h3><a href="#"><i class="fa-solid fa-earth-americas"></i></a> Start For Free</h3>
+        <h4><a href="#"><i class="fa-solid fa-rocket"></i></a>Get More With Pro</h4>
+      </div>
+      <img src="img/fifth1.jpg" class="first">
+      <img src="img/fifth2.jpg" class="second">
+    </div>
+  </div>
+</body>
+</html>
